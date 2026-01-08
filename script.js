@@ -9,9 +9,14 @@
 //     console.log("hello and welcome to dany empire:",arg[i]);
 // }
 // console.log("No mercy");
-const fruit=require("./fruits");
-console.log(fruit)
+// const fruit=require("./fruits");
+// console.log(fruit)
 // console.log(math.sum(2,2));
 // console.log(math.pi);
 // console.log(math.multiply(7,2));
 // console.log(math.g);
+// import{sum,multiply} from "./math.js";
+// // console.log(sum(2,3));
+// console.log(multiply(14,21));
+import { generate } from "random-words";
+console.log(generate());

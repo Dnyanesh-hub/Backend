@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is my backend pacakage",
+  "homepage": "https://github.com/Dnyanesh-hub/Backend#readme",
+  "bugs": {
+    "url": "https://github.com/Dnyanesh-hub/Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dnyanesh-hub/Backend.git"
+  },
+  "license": "ISC",
+  "author": "dnyaneshwar mali",
+  "type": "module",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
+}

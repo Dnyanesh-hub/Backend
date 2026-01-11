@@ -4,14 +4,15 @@ h1{
 /* body{
     background-color: rgb(224, 211, 211);
 } */
-.posts{
-    background-color: rgb(49, 201, 77);
+.post{
+    background-color: rgb(208, 209, 151);
 }
 .user{
-    color: rgb(228, 228, 123);
-    background-color: cadetblue;
+    color: rgb(3, 3, 3);
+    /* background-color: cadetblue; */
+    font-style: italic;
 }
 .content{
     color: black;
-    background-color: darkseagreen;
+    /* background-color: darkseagreen; */
 }

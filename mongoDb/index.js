@@ -46,16 +46,64 @@ const Employee=mongoose.model('Employee',userSchema);
 //     console.log(err);
 
 // });
-User.findById("696f7b0d361d42a2698d47c6")
-.then((data)=>{
-    console.log(data);
-}).catch((err)=>{
-    console.log(err);
+// User.findById("696f7b0d361d42a2698d47c6")
+// .then((data)=>{
+//     console.log(data);
+// }).catch((err)=>{
+//     console.log(err);
 
+// });
+// User.updateOne({name:"khushi"},{age:20}).then((res)=>{
+//     console.log(res);
+
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+// User.updateMany({name:"khushi"},{name:"shivani"}).then((res)=>{
+//     console.log(res);
+
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+// User.findOneAndUpdate({name:"shivani"},{age:21},{new:true}).then((data)=>{
+//     console.log(data);
+
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+// User.deleteOne({name:"rozi"}).then((data)=>{
+//     console.log(data);
+
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+// User.deleteMany({age:{$lte:18}}).then((res)=>{
+//     console.log(res);
+
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+// User.findByIdAndDelete("696f8044619e983dea06fcf2").then((res)=>{
+//     console.log(res);
+
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+User.findOneAndDelete({name:"dany"}).then((res)=>{
+    console.log(res);
+
+})
+.catch((err)=>{
+    console.log(err);
 });
 
 
 
-
-
+  
 

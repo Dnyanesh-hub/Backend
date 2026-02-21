@@ -2,22 +2,36 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const session = require("express-session");
-app.use(
-  session({
-    secret: "mysupersecretstring",
-    resave: false,
-    saveUninitialized: true,
-  }),
-);
-app.get("/reqcount", (req, res) => {
-  if (req.session.count) {
-    req.session.count++;
-  } else {
-    req.session.count = 1;
-  }
+const flash=require("connect-flash");
+app.set("view engine","ejs");
+app.set("")
+const sessionOptions = {
+  secret: "mysupersecretstring",
+  resave: false,
+  saveUninitialized: true,
+};
+app.use(session(sessionOptions));
+app.use(flash());
+app.get("/register",(req,res)=>{
+  let {name="anonymous"}=req.query;
+  res.session.name=name;
+  req.flash("success","User register successfully!");
+  res.redirect("/hello");
 
-  res.send(`you sent a request ${req.session.count} times`);
 });
+app.get("/hello",(req,res)=>{
+   res.send( `hello ,${req.session.name}`); 
+});
+
+// app.get("/reqcount", (req, res) => {
+//   if (req.session.count) {
+//     req.session.count++;
+//   } else {
+//     req.session.count = 1;
+//   }
+
+//   res.send(`you sent a request ${req.session.count} times`);
+// });
 // app.get("/test",(req,res)=>{
 //   res.send("test successful");
 // });

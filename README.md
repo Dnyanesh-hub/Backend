@@ -14,6 +14,8 @@ The goal of this repo is to understand real-world backend concepts, APIs, databa
 - JavaScript
 - REST APIs
 - Git & GitHub
+- cookies
+- caches
 
 ---
 
